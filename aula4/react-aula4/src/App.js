@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Nav from "./Nav";
+import ItemPage from "./ItemPage";
+import items from "./static-data"; // ✅ agora está certo
 
-const App = () =>{
-  return(
+const App = () => {
+  const [activeTab, setActiveTab] = useState("items");
+
+  return (
     <div className="App">
-      <Nav>
-        <main className="App-content">
-          <span>Empty</span>
-        </main>
-      </Nav>
+      <Nav activeTab={activeTab} onTabChange={setActiveTab} />
+      <main className="App-content">
+        <Content tab={activeTab} />
+      </main>
     </div>
-  )
-}
+  );
+};
+
+const Content = ({ tab }) => {
+  switch (tab) {
+    case "items":
+      return <ItemPage items={items} />;
+    case "cart":
+      return <span>O carrinho vai aqui...</span>;
+    default:
+      return null;
+  }
+};
 
 export default App;
