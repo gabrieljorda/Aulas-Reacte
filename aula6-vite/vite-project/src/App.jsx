@@ -1,12 +1,10 @@
-import { useState } from "react";
-import ConditionalComponent from "./component/ConditionalComponent";
-
+import GihtubUser from "./component/GithubUser";
 function App() {
   return (
-      <div>
-        <ConditionalComponent/>
-      </div>
+    <div>
+      {" "}
+      <GihtubUser userName="gabrieljorda" />{" "}
+    </div>
   );
 }
-
 export default App;
