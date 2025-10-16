@@ -1,0 +1,32 @@
+/* Estiliza o container de navegação */
+.nav {
+    display: flex; /* Usa Flexbox para layout flexível */
+    justify-content: space-between; /* Distribui espaço igualmente entre os itens, alinhando-os nas extremidades */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    margin: 40px 120px; /* Define margens superior e inferior de 40px e margens esquerda e direita de 120px */
+    color: white; /* Define a cor do texto para branco */
+}
+
+/* Estiliza o logo de navegação */
+.nav-logo {
+    font-family: 'Outfit'; /* Define a fonte do logo */
+    font-size: 42px; /* Define o tamanho da fonte para 42px */
+    font-weight: 400; /* Define o peso da fonte para 400 (normal) */
+}
+
+/* Estiliza o menu de navegação */
+.nav-menu {
+    display: flex; /* Usa Flexbox para layout flexível */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    list-style: none; /* Remove os marcadores da lista */
+    font-size: 18px; /* Define o tamanho da fonte para 18px */
+    gap: 90px; /* Define um espaçamento de 90px entre os itens do menu */
+}
+
+/* Estiliza o item de menu "Content" */
+.nav-content {
+    border-radius: 50px; /* Adiciona bordas arredondadas com raio de 50px */
+    padding: 10px 30px; /* Adiciona preenchimento interno de 10px no topo e embaixo e 30px nas laterais */
+    background-color: #fff; /* Define a cor de fundo para branco */
+    color: black; /* Define a cor do texto para preto */
+}
